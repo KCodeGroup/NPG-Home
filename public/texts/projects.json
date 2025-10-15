@@ -1,0 +1,323 @@
+[
+    {
+        "id": "la-bendicion-club-house",
+        "nombre": "La Bendición Club House",
+        "ubicacion": {
+            "ciudad": "Arjona",
+            "departamento": "Bolívar"
+        },
+        "descripcion": "En Arjona nace La Bendición Club House, un lugar donde la modernidad se une con la calma para ofrecer un estilo de vida único. Más que una urbanización, es un espacio diseñado para soñar en grande, donde cada día inspira nuevas oportunidades y te acerca a la vida que siempre imaginaste.",
+        "amenidades": [
+            "Piscina para adultos",
+            "Zona social",
+            "Cancha múltiple",
+            "Gran lago",
+            "Zonas verdes",
+            "Gimnasio",
+            "Salón social",
+            "Bohíos",
+            "Plazoletas",
+            "Ciclorrutas",
+            "Seguridad 24/7"
+        ],
+        "puntosDeInteres": [
+            "Centro Comercial Plaza 90",
+            "Centro empresarial de Arjona",
+            "Coliseo Arena de Bolívar (Turbaco)",
+            "Cartagena"
+        ],
+        "casasTipo": [
+            {
+                "nombre": "Casa Tipo 1",
+                "areaTotal": "51.08m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "habitaciones": 2,
+                    "cocina": 1,
+                    "banos": 1,
+                    "jardin": 1,
+                    "patio": 1,
+                    "terraza": 1
+                }
+            },
+            {
+                "nombre": "Casa Tipo 2",
+                "areaPiso1": "48.51m²",
+                "areaPiso2": "39.08m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "habitaciones": 2,
+                    "cocina": 1,
+                    "banos": 1,
+                    "jardin": 1,
+                    "patio": 1,
+                    "terraza": 1
+                }
+            },
+            {
+                "nombre": "Casa Tipo 3",
+                "areaPiso1": "48.51m²",
+                "areaPiso2": "39.08m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "habitaciones": 2,
+                    "cocina": 1,
+                    "banos": 1,
+                    "jardin": 1,
+                    "patio": 1,
+                    "terraza": 1
+                }
+            }
+        ],
+        "financiacion": {
+            "lotesDesde": "$31.000.000",
+            "cuotaInicial": "20%",
+            "financiacion": "80%",
+            "separaTuLotePor": "$1.000.000",
+            "precioPorM2Desde": "$347.000"
+        }
+    },
+    {
+        "id": "la-reserva-campestre",
+        "nombre": "La Reserva Campestre",
+        "ubicacion": {
+            "ciudad": "Barranquilla",
+            "departamento": "Atlántico"
+        },
+        "descripcion": "Ubicados en una de las zonas de mayor dinamismo y crecimiento del Caribe colombiano, a pocos minutos de la vibrante Barranquilla y a kms de la histórica Cartagena. Accesos rápidos, desarrollo urbano y proximidad a las principales áreas comerciales y culturales de la región, un entorno privilegiado que conecta lo mejor de ambas ciudades con la tranquilidad y el estilo de vida que buscas.",
+        "amenidades": [
+            "Piscina para adultos",
+            "Piscina para niños",
+            "Mini Golf",
+            "Cancha de tenis",
+            "Cancha Fútbol 5",
+            "Cancha Voleibol Playa",
+            "Parque para niños",
+            "Parque para mascotas",
+            "Zona de yoga",
+            "Bio Gym al aire libre",
+            "Gym interior",
+            "Mini market",
+            "Salón social",
+            "Zona BBQ"
+        ],
+        "puntosDeInteres": [
+            "Playas de Puerto Colombia",
+            "Castillo de Salgar",
+            "Malecón de Puerto Colombia",
+            "Muelle 1888 (Centro Gastronómico Internacional)",
+            "Universidades: del Atlántico y del Norte",
+            "Colegios: Alemán, Británico Internacional y Royal School"
+        ],
+        "casasTipo": [
+            {
+                "nombre": "Casa Tipo 1",
+                "areaPiso1": "0m²",
+                "areaPiso2": "0m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "cocina": 1,
+                    "banos": 3,
+                    "habitaciones": 3,
+                    "piscina": 1,
+                    "patio": 1,
+                    "terraza": 1
+                }
+            },
+            {
+                "nombre": "Casa Tipo 2",
+                "areaPiso1": "0m²",
+                "areaPiso2": "0m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "cocina": 1,
+                    "banos": 5,
+                    "habitaciones": 3,
+                    "familyRoom": 1,
+                    "patio": 1,
+                    "terraza": 1,
+                    "piscina": 1,
+                    "jacuzzi": 1
+                }
+            },
+            {
+                "nombre": "Casa Tipo 3",
+                "areaPiso1": "0m²",
+                "caracteristicas": {
+                    "salaComedor": 1,
+                    "cocina": 1,
+                    "banos": 4,
+                    "habitaciones": 2,
+                    "habitacionServicios": 1,
+                    "piscina": 1,
+                    "patio": 1,
+                    "terraza": 1
+                }
+            }
+        ],
+        "financiacion": {
+            "lotesDesde": "$106.000.000",
+            "cuotaInicial": "20%",
+            "cuotaMensual": "20%",
+            "financiacion": "60%",
+            "separaTuLotePor": "$1.000.000",
+            "precioPorM2Desde": "$530.000"
+        }
+    },
+    {
+        "id": "simaruba-beach-club",
+        "nombre": "Simaruba Beach Club",
+        "ubicacion": {
+            "ciudad": "Cartagena",
+            "departamento": "Bolívar"
+        },
+        "descripcion": "La esencia urbanística y de diseño del condominio Simaruba Beach Club es el Boho Luxury como experiencia de vida que fluya en armonía con el mar, la exuberancia tropical y el lujo descomplicado integrado al paisajismo donde los jardines coloridos hacen honor a la flora cartagenera. Diseños a cargo de la prestigiosa firma Velez & Santander",
+        "caracteristicasEspeciales": [
+            "360m de Playa"
+        ],
+        "amenidades": [
+            "Piscina adultos",
+            "Piscina niños",
+            "Jacuzzi",
+            "Acceso directo a la playa",
+            "Sauna y turco",
+            "Kiosko",
+            "Zona BBQ",
+            "Zona Bar",
+            "Restaurantes",
+            "Ciclorrutas",
+            "Senderos peatonales",
+            "Cancha múltiple",
+            "Cancha de tenis",
+            "Cancha de pádel",
+            "Mini market",
+            "Gimnasio cerrado",
+            "Gimnasio al aire libre",
+            "Parque infantil",
+            "Capilla",
+            "Parque para mascotas",
+            "Vigilancia 24/7"
+        ],
+        "puntosDeInteres": [
+            "Futuro aeropuerto internacional de Cartagena",
+            "Centro médico Serena del Mar",
+            "Centro comercial Las Ramblas",
+            "Centro Histórico",
+            "Colegio Jorge Washington",
+            "Universidad de los Andes",
+            "Parroquia San Juan Pablo II",
+            "Gimnasio Altair",
+            "Clínica Serena del Mar",
+            "Morros",
+            "Hotel las Américas",
+            "Aeropuerto Rafael Núñez",
+            "Peaje Marahuaco"
+        ],
+        "casasTipo": [
+            {
+                "nombre": "Casa Tipo 1 \"Teka\"",
+                "areaTotal": "478m²",
+                "caracteristicas": {
+                    "habitaciones": 4,
+                    "banos": 5,
+                    "parqueaderos": 2
+                }
+            },
+            {
+                "nombre": "Casa Tipo 2 \"Coral\"",
+                "areaTotal": "239m²",
+                "caracteristicas": {
+                    "habitaciones": 3,
+                    "banos": 4,
+                    "parqueaderos": 2
+                }
+            },
+            {
+                "nombre": "Casa Tipo 3 \"Bonga\"",
+                "areaTotal": "303.69m²",
+                "caracteristicas": {
+                    "habitaciones": 4,
+                    "banos": 4,
+                    "parqueaderos": 2
+                }
+            }
+        ],
+        "financiacion": {
+            "lotesDesde": "$00.000.000",
+            "cuotaInicial": "25%",
+            "financiacion": "75%",
+            "separaTuLotePor": "$5.000.000",
+            "precioPorM2Desde": "$00.000"
+        }
+    },
+    {
+        "id": "luwana-alma-beach",
+        "nombre": "Luwana Alma Beach",
+        "ubicacion": {
+            "ciudad": "Cartagena",
+            "departamento": "Bolívar"
+        },
+        "descripcion": "LUWANA Alma Beach está ubicado en un lugar privilegiado, a solo 15 minutos del Centro Histórico de la ciudad. En un entorno rodeado de naturaleza y con acceso ágil a las principales vías, es el sitio ideal para vivir, descansar y conectar. Cada mañana comienza con vistas espectaculares, disfrutando de un ambiente lleno de confort, servicios y experiencias exclusivas a tu alrededor.",
+        "amenidades": [
+            "Ocean Sanctuary",
+            "Restaurante",
+            "Gimnasio",
+            "Spa",
+            "Sauna",
+            "Fireside Lounge",
+            "Beach Club",
+            "Swimming Lane",
+            "Wellness Vault",
+            "Stillness"
+        ],
+        "puntosDeInteres": [
+            "Centro Comercial las Ramblas",
+            "Centro hospitalario Serena del Mar",
+            "Manzanillo del Mar",
+            "La Boquilla",
+            "Punta Canoas",
+            "Hotel Arena Beach Cartagena",
+            "Boca Grande"
+        ],
+        "casasTipo": [
+            {
+                "nombre": "Casa Boutique Tipo 1",
+                "areaPiso1": "54.20m²",
+                "areaPiso2": "24.40m²",
+                "caracteristicas": {
+                    "piscina": 1,
+                    "asoleadoras": 1,
+                    "salaComedor": 1,
+                    "cocina": 1,
+                    "alcobas": 2,
+                    "banos": 3,
+                    "parqueaderos": 1
+                },
+                "opcionesPlanta3": {
+                    "opcion1": {
+                        "area": "16.40m²",
+                        "caracteristicas": [
+                            "1 Alcoba",
+                            "1 Baño"
+                        ]
+                    },
+                    "opcion2": {
+                        "area": "95.00m²",
+                        "caracteristicas": [
+                            "1 Jacuzzi",
+                            "1 Terraza-BBQ"
+                        ]
+                    }
+                }
+            }
+        ],
+        "financiacion": {
+            "lotesDesde": "$271.720.000",
+            "cuotaInicial": "20%",
+            "cuotaFinal": "20%",
+            "financiacion": "60%",
+            "separaTuLotePor": "$5.000.000",
+            "precioPorM2Desde": "$1.170.000"
+        }
+    }
+]
