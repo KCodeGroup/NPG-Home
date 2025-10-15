@@ -6,8 +6,7 @@
         "catchPhrase": "Donde la modernidad se encuentra con la tranquilidad",
         "ubicacion": {
             "ciudad": "Arjona",
-            "departamento": "Bolívar",
-            "googleMaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62864.48576!2d-75.35!3d10.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625c4c0e8cfb1%3A0x1e9b6f5c8b3d2e5f!2sArjona%2C%20Bol%C3%ADvar%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567890"
+            "departamento": "Bolívar"
         },
         "descripcion": "En Arjona nace La Bendición Club House, un lugar donde la modernidad se une con la calma para ofrecer un estilo de vida único. Más que una urbanización, es un espacio diseñado para soñar en grande, donde cada día inspira nuevas oportunidades y te acerca a la vida que siempre imaginaste.",
         "amenidades": [
@@ -32,6 +31,7 @@
         "casasTipo": [
             {
                 "nombre": "Casa Tipo 1",
+                "totalImages": 2,
                 "areaTotal": "51.08m²",
                 "caracteristicas": {
                     "salaComedor": 1,
@@ -45,6 +45,7 @@
             },
             {
                 "nombre": "Casa Tipo 2",
+                "totalImages": 2,
                 "areaPiso1": "48.51m²",
                 "areaPiso2": "39.08m²",
                 "caracteristicas": {
@@ -59,6 +60,7 @@
             },
             {
                 "nombre": "Casa Tipo 3",
+                "totalImages": 2,
                 "areaPiso1": "48.51m²",
                 "areaPiso2": "39.08m²",
                 "caracteristicas": {
@@ -88,8 +90,7 @@
         "catchPhrase": "Vive el equilibrio perfecto entre el Caribe y la naturaleza",
         "ubicacion": {
             "ciudad": "Barranquilla",
-            "departamento": "Atlántico",
-            "googleMaps": "https://www.google.com/maps/place/Riviera+Del+Mar+-+Reserva+Campestre/@10.9645499,-74.9861271,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef67f18f7528bfb:0xca3de7accd5da27c!8m2!3d10.9645446!4d-74.9835522!16s%2Fg%2F11hfxvczz9?entry=ttu&g_ep=EgoyMDI1MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+            "departamento": "Atlántico"
         },
         "descripcion": "Ubicados en una de las zonas de mayor dinamismo y crecimiento del Caribe colombiano, a pocos minutos de la vibrante Barranquilla y a kms de la histórica Cartagena. Accesos rápidos, desarrollo urbano y proximidad a las principales áreas comerciales y culturales de la región, un entorno privilegiado que conecta lo mejor de ambas ciudades con la tranquilidad y el estilo de vida que buscas.",
         "amenidades": [
@@ -119,6 +120,7 @@
         "casasTipo": [
             {
                 "nombre": "Casa Tipo 1",
+                "totalImages": 5,
                 "areaPiso1": "0m²",
                 "areaPiso2": "0m²",
                 "caracteristicas": {
@@ -133,6 +135,7 @@
             },
             {
                 "nombre": "Casa Tipo 2",
+                "totalImages": 4,
                 "areaPiso1": "0m²",
                 "areaPiso2": "0m²",
                 "caracteristicas": {
@@ -149,6 +152,7 @@
             },
             {
                 "nombre": "Casa Tipo 3",
+                "totalImages": 5,
                 "areaPiso1": "0m²",
                 "caracteristicas": {
                     "salaComedor": 1,
@@ -179,8 +183,7 @@
         "catchPhrase": "Lujo bohemio frente al mar Caribe",
         "ubicacion": {
             "ciudad": "Cartagena",
-            "departamento": "Bolívar",
-            "googleMaps": "https://www.google.com/maps/place/Simaruba+Beach+Club/@10.5725056,-75.5135376,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef639f1ce5e46e5:0x32cb84f6d0e9a050!8m2!3d10.5725003!4d-75.5109627!16s%2Fg%2F11kspz4gg3?entry=ttu&g_ep=EgoyMDI1MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+            "departamento": "Bolívar"
         },
         "descripcion": "La esencia urbanística y de diseño del condominio Simaruba Beach Club es el Boho Luxury como experiencia de vida que fluya en armonía con el mar, la exuberancia tropical y el lujo descomplicado integrado al paisajismo donde los jardines coloridos hacen honor a la flora cartagenera. Diseños a cargo de la prestigiosa firma Velez & Santander",
         "caracteristicasEspeciales": [
@@ -227,6 +230,7 @@
         "casasTipo": [
             {
                 "nombre": "Casa Tipo 1 \"Teka\"",
+                "totalImages": 3,
                 "areaTotal": "478m²",
                 "caracteristicas": {
                     "habitaciones": 4,
@@ -236,6 +240,7 @@
             },
             {
                 "nombre": "Casa Tipo 2 \"Coral\"",
+                "totalImages": 3,
                 "areaTotal": "239m²",
                 "caracteristicas": {
                     "habitaciones": 3,
@@ -245,6 +250,7 @@
             },
             {
                 "nombre": "Casa Tipo 3 \"Bonga\"",
+                "totalImages": 3,
                 "areaTotal": "303.69m²",
                 "caracteristicas": {
                     "habitaciones": 4,
@@ -269,8 +275,7 @@
         "catchPhrase": "Tu santuario exclusivo a pasos del paraíso",
         "ubicacion": {
             "ciudad": "Cartagena",
-            "departamento": "Bolívar",
-            "googleMaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125478.88!2d-75.51!3d10.39!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625d0f0e8cfb1%3A0x1e9b6f5c8b3d2e5f!2sCartagena%2C%20Bol%C3%ADvar%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567893"
+            "departamento": "Bolívar"
         },
         "descripcion": "LUWANA Alma Beach está ubicado en un lugar privilegiado, a solo 15 minutos del Centro Histórico de la ciudad. En un entorno rodeado de naturaleza y con acceso ágil a las principales vías, es el sitio ideal para vivir, descansar y conectar. Cada mañana comienza con vistas espectaculares, disfrutando de un ambiente lleno de confort, servicios y experiencias exclusivas a tu alrededor.",
         "amenidades": [
@@ -297,6 +302,7 @@
         "casasTipo": [
             {
                 "nombre": "Casa Boutique Tipo 1",
+                "totalImages": 5,
                 "areaPiso1": "54.20m²",
                 "areaPiso2": "24.40m²",
                 "caracteristicas": {

@@ -1,5 +1,6 @@
 export interface CasaTipo {
   nombre: string;
+  totalImages: number;
   areaPiso1?: string;
   areaPiso2?: string;
   areaTotal?: string;
@@ -44,7 +45,6 @@ export interface Financiacion {
 export interface Ubicacion {
   ciudad: string;
   departamento: string;
-  googleMaps: string;
 }
 
 export type TipoProyecto = "residencial" | "playa" | "campestre";
