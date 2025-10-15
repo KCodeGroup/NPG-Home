@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Providers from "@/components/Providers";
 
@@ -15,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NPG Home - Proyectos Inmobiliarios",
+  title: "NPG Home",
   description: "Encuentra tu hogar ideal en los mejores proyectos inmobiliarios del Caribe colombiano",
 };
 

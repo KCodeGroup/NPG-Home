@@ -1,3 +1,5 @@
+'use client';
+
 import { AppBar, Container, Toolbar } from '@mui/material';
 import NavLink from './NavLink';
 import LogoButton from './LogoButton';
