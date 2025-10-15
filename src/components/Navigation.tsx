@@ -32,8 +32,8 @@ const { palette } = theme;
 const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/proyectos", label: "Proyectos" },
-  { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
+  { href: "/sobre-nosotros", label: "Sobre Nosotros" },
 ];
 
 const socialLinks = [
@@ -66,7 +66,7 @@ const socialLinks = [
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const muiTheme = useTheme();
-  const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(muiTheme.breakpoints.down("sm"));
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -235,26 +235,6 @@ export default function Navigation() {
                 </Box>
 
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  {/* {socialLinks.map((social) => (
-                    <IconButton
-                      key={social.label}
-                      component="a"
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      size="small"
-                      sx={{
-                        color: palette.primary.contrastText,
-                        "&:hover": {
-                          backgroundColor: social.color,
-                          transform: "scale(1.1)",
-                        },
-                        transition: "all 0.3s ease",
-                      }}
-                    >
-                      <social.icon fontSize="small" />
-                    </IconButton>
-                  ))} */}
                   <ContactButton />
                 </Box>
               </>

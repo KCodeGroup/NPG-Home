@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Box, IconButton, Typography } from "@mui/material";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Image from "next/image";
+import { colors } from "@/theme/theme";
 
 interface HouseTypeCarouselProps {
   projectId: string;
@@ -96,11 +97,14 @@ export default function HouseTypeCarousel({
           left: { xs: 10, sm: 20 },
           top: "50%",
           transform: "translateY(-50%)",
-          backgroundColor: "rgba(255, 255, 255, 0.3)",
-          color: "white",
+          backgroundColor: colors.light,
+          color: colors.primary,
           "&:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            backgroundColor: colors.secondary,
+            color: colors.light,
+            boxShadow: "0 6px 20px rgba(0, 0, 0, 0.25)",
           },
+          transition: "all 0.3s ease",
           zIndex: 10,
         }}
       >
@@ -113,11 +117,14 @@ export default function HouseTypeCarousel({
           right: { xs: 10, sm: 20 },
           top: "50%",
           transform: "translateY(-50%)",
-          backgroundColor: "rgba(255, 255, 255, 0.3)",
-          color: "white",
+          backgroundColor: colors.light,
+          color: colors.primary,
           "&:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            backgroundColor: colors.secondary,
+            color: colors.light,
+            boxShadow: "0 6px 20px rgba(0, 0, 0, 0.25)",
           },
+          transition: "all 0.3s ease",
           zIndex: 10,
         }}
       >

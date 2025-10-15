@@ -21,6 +21,7 @@ import Image from "next/image";
 import amenityIconMap from "@/utils/amenityIcons";
 import HouseTypeCarousel from "@/components/HouseTypeCarousel";
 import houseCharacteristicMap from "@/utils/houseCharacteristicIcons";
+import FinancingCard from "@/components/FinancingCard";
 
 interface ProjectPageProps {
   params: {
@@ -532,80 +533,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </Grid>
 
           {/* Financiación */}
-          <Grid size={12}>
-            <Typography variant="h4" fontWeight={700} mb={2}>
-              Financiación
-            </Typography>
-            <Grid container spacing={2}>
-              <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-                <Box
-                  sx={{
-                    p: 2,
-                    backgroundColor: "#F9EBDC",
-                    borderRadius: 2,
-                    textAlign: "center",
-                  }}
-                >
-                  <Typography variant="body2" color="text.secondary" mb={1}>
-                    Lotes desde
-                  </Typography>
-                  <Typography variant="h6" fontWeight={700}>
-                    ${project.financiacion.lotesDesde} COP
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-                <Box
-                  sx={{
-                    p: 2,
-                    backgroundColor: "#F9EBDC",
-                    borderRadius: 2,
-                    textAlign: "center",
-                  }}
-                >
-                  <Typography variant="body2" color="text.secondary" mb={1}>
-                    Cuota Inicial
-                  </Typography>
-                  <Typography variant="h6" fontWeight={700}>
-                    {project.financiacion.cuotaInicial}
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-                <Box
-                  sx={{
-                    p: 2,
-                    backgroundColor: "#F9EBDC",
-                    borderRadius: 2,
-                    textAlign: "center",
-                  }}
-                >
-                  <Typography variant="body2" color="text.secondary" mb={1}>
-                    Financiación
-                  </Typography>
-                  <Typography variant="h6" fontWeight={700}>
-                    {project.financiacion.financiacion}
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-                <Box
-                  sx={{
-                    p: 2,
-                    backgroundColor: "#F9EBDC",
-                    borderRadius: 2,
-                    textAlign: "center",
-                  }}
-                >
-                  <Typography variant="body2" color="text.secondary" mb={1}>
-                    Separa por
-                  </Typography>
-                  <Typography variant="h6" fontWeight={700}>
-                    ${project.financiacion.separaTuLotePor} COP
-                  </Typography>
-                </Box>
-              </Grid>
-            </Grid>
+          <Grid size={12} display="flex" justifyContent="center" sx={{ pt: 3 }}>
+            <FinancingCard project={project} financing={project.financiacion} />
           </Grid>
         </Grid>
       </Box>
