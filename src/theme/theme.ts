@@ -1,12 +1,12 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
 // Color palette
 export const colors = {
-  primary: '#0C1F35',    // Dark blue
-  secondary: '#BD8353',  // Gold/Bronze
-  light: '#F9EBDC',      // Cream
-  gray: '#797979',       // Gray
-  dark: '#1D1D1D',       // Almost black
+  primary: "#0C1F35", // Dark blue
+  secondary: "#BD8353", // Gold/Bronze
+  light: "#F9EBDC", // Cream
+  gray: "#797979", // Gray
+  dark: "#1D1D1D", // Almost black
 };
 
 const theme = createTheme({
@@ -21,7 +21,7 @@ const theme = createTheme({
     },
     background: {
       default: colors.light,
-      paper: '#FFFFFF',
+      paper: "#FFFFFF",
     },
     text: {
       primary: colors.dark,
@@ -29,7 +29,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    fontFamily:
+      '"Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
   breakpoints: {
     values: {
@@ -43,4 +44,3 @@ const theme = createTheme({
 });
 
 export default theme;
-

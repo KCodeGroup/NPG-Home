@@ -55,7 +55,6 @@ export interface Project {
   puntosDeInteres: string[];
   casasTipo: CasaTipo[];
   financiacion: Financiacion;
-  imagenes?: string[];
   caracteristicasEspeciales?: string[];
+  m2: string;
 }
-

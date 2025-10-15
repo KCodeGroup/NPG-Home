@@ -69,12 +69,13 @@
                 }
             }
         ],
+        "m2": "51.08m²",
         "financiacion": {
-            "lotesDesde": "$31.000.000",
+            "lotesDesde": "31.000.000",
             "cuotaInicial": "20%",
             "financiacion": "80%",
-            "separaTuLotePor": "$1.000.000",
-            "precioPorM2Desde": "$347.000"
+            "separaTuLotePor": "1.000.000",
+            "precioPorM2Desde": "347.000"
         }
     },
     {
@@ -155,13 +156,14 @@
                 }
             }
         ],
+        "m2": "0m²",
         "financiacion": {
-            "lotesDesde": "$106.000.000",
+            "lotesDesde": "106.000.000",
             "cuotaInicial": "20%",
             "cuotaMensual": "20%",
             "financiacion": "60%",
-            "separaTuLotePor": "$1.000.000",
-            "precioPorM2Desde": "$530.000"
+            "separaTuLotePor": "1.000.000",
+            "precioPorM2Desde": "530.000"
         }
     },
     {
@@ -242,12 +244,13 @@
                 }
             }
         ],
+        "m2": "239m²",
         "financiacion": {
-            "lotesDesde": "$00.000.000",
+            "lotesDesde": "00.000.000",
             "cuotaInicial": "25%",
             "financiacion": "75%",
-            "separaTuLotePor": "$5.000.000",
-            "precioPorM2Desde": "$00.000"
+            "separaTuLotePor": "5.000.000",
+            "precioPorM2Desde": "00.000"
         }
     },
     {
@@ -311,13 +314,14 @@
                 }
             }
         ],
+        "m2": "78.60m²",
         "financiacion": {
-            "lotesDesde": "$271.720.000",
+            "lotesDesde": "271.720.000",
             "cuotaInicial": "20%",
             "cuotaFinal": "20%",
             "financiacion": "60%",
-            "separaTuLotePor": "$5.000.000",
-            "precioPorM2Desde": "$1.170.000"
+            "separaTuLotePor": "5.000.000",
+            "precioPorM2Desde": "1.170.000"
         }
     }
 ]

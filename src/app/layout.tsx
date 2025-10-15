@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Providers from "@/components/Providers";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "NPG Home",
-  description: "Encuentra tu hogar ideal en los mejores proyectos inmobiliarios del Caribe colombiano",
+  description:
+    "Encuentra tu hogar ideal en los mejores proyectos inmobiliarios del Caribe colombiano",
+  icons: {
+    icon: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +26,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={bricolageGrotesque.className}
+        style={{
+          margin: 0,
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          backgroundColor: "#FFFFFF",
+        }}
+      >
         <Providers>
           <Navigation />
-          {children}
+          <div style={{ flex: 1 }}>{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

@@ -195,8 +195,11 @@ export default function Carousel() {
         activeStep={activeStep}
         sx={{
           position: "absolute",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           bottom: 0,
-          left: "50%",
+          left: 0,
           width: "100%",
           backgroundColor: "transparent",
           "& .MuiMobileStepper-dot": {
