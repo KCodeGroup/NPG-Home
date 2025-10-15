@@ -17,7 +17,7 @@ export default function MultiActionAreaCard({ project }: ProjectCardProps) {
     <Box
       sx={{
         position: "relative",
-        width: "90%",
+        width: { xs: "90%", md: "100%" },
         mb: 3,
         "&:hover > *": { transform: "scale(1.02)" },
         "&:hover .button-text::after": {
@@ -56,7 +56,7 @@ export default function MultiActionAreaCard({ project }: ProjectCardProps) {
               variant="h5"
               component="div"
               fontWeight={700}
-              fontSize={{ xs: "1.25rem", sm: "1.5rem", md: "1.75rem" }}
+              fontSize={{ xs: "1.25rem", sm: "1.5rem", md: "1.5rem" }}
               sx={{ color: "text.dark", textAlign: "center" }}
             >
               {project.nombre}

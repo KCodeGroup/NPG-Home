@@ -10,9 +10,9 @@ export default function ProjectCardGrid() {
     >
       <Grid
         container
-        width="60%"
+        width={{ xs: "90%", md: "65%" }}
         rowSpacing={4}
-        columnSpacing={{ xs: 1, sm: 2, md: 1 }}
+        columnSpacing={{ xs: 1, sm: 2, md: 2 }}
       >
         {projects.map((project) => (
           <Grid

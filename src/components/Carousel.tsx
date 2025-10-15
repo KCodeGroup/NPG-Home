@@ -72,7 +72,7 @@ export default function Carousel() {
       sx={{
         width: "100%",
         position: "relative",
-        height: { xs: "300px", sm: "400px", md: "800px", lg: "600px" },
+        height: { xs: "300px", sm: "400px", md: "500px", lg: "600px" },
         overflow: "hidden",
       }}
     >
@@ -97,9 +97,9 @@ export default function Carousel() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               cursor: "pointer",
-              "&:hover": {
-                transform: "scale(1.02)",
-              },
+              //   "&:hover": {
+              //     transform: "scale(1.02)",
+              //   },
             }}
           >
             <Box

@@ -12,8 +12,8 @@ export default function Footer() {
         component="footer"
         sx={{
           width: "100%",
-          maxHeight: "600px",
-          height: "600px",
+          maxHeight: "450px",
+          height: "450px",
           position: "relative",
           mt: "auto",
         }}
