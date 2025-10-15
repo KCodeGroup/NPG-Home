@@ -18,7 +18,7 @@ export default function ContactButton() {
         backgroundColor: colors.light,
         color: colors.primary,
         fontWeight: 600,
-        pl: 0.5,
+        pl: 1,
         pr: 2,
         py: 0,
         fontSize: { xs: "0.875rem", md: "1rem" },

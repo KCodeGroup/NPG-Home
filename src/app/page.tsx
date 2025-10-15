@@ -2,6 +2,7 @@ import { Typography, Stack } from "@mui/material";
 import Carousel from "@/components/Carousel";
 import ProjectCardGrid from "@/components/ProjectCardGrid";
 import HomeGrid from "@/components/HomeGrid";
+import CTATextSection from "@/components/CTATextSection";
 
 export default function Home() {
   return (
@@ -32,46 +33,19 @@ export default function Home() {
         </Typography>
       </Stack>
       <ProjectCardGrid />
-      <Stack
-        sx={{
-          width: "80%",
-          gap: 3,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="h4" fontWeight={700}>
-          Creamos espacios que reflejan sueños, visión y confianza
-        </Typography>
-        <Typography variant="body1" fontWeight={400}>
-          Combinamos diseño, experiencia y asesoría personalizada para ofrecer
+      <CTATextSection
+        title="Creamos espacios que reflejan sueños, visión y confianza"
+        description="Combinamos diseño, experiencia y asesoría personalizada para ofrecer
           soluciones inmobiliarias que conectan con tus aspiraciones.
           Convertimos tus sueños en proyectos reales, donde cada detalle refleja
-          confianza y visión.
-        </Typography>
-      </Stack>
+          confianza y visión."
+      />
       {/* <HomeGrid /> */}
-      <Stack
-        sx={{
-          width: "80%",
-          gap: 3,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-          mb: 5,
-        }}
-      >
-        <Typography variant="h4" fontWeight={700}>
-          Estás a pocos pasos de alcanzar tus sueños
-        </Typography>
-        <Typography variant="body1" fontWeight={400}>
-          Escríbenos y déjanos crear el espacio perfecto para ti, donde la
-          confianza y la visión se vuelven realidad.
-        </Typography>
-      </Stack>
+      <CTATextSection
+        title="Estás a pocos pasos de alcanzar tus sueños"
+        description="Escríbenos y déjanos crear el espacio perfecto para ti, donde la
+          confianza y la visión se vuelven realidad."
+      />
     </Stack>
   );
 }

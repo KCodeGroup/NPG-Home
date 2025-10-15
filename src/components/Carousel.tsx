@@ -10,7 +10,6 @@ interface CarouselItem {
   title: string;
   location: string;
   subtitle: string;
-  image: string;
 }
 
 const carouselItems: CarouselItem[] = [
@@ -19,28 +18,24 @@ const carouselItems: CarouselItem[] = [
     title: "La Bendición Club House",
     location: "Arjona, Bolívar",
     subtitle: "Arjona, Bolívar",
-    image: "/images/carrousel/bendicion.webp",
   },
   {
     id: "la-reserva-campestre",
     title: "La Reserva Campestre",
     location: "Barranquilla, Atlántico",
     subtitle: "Barranquilla, Atlántico",
-    image: "/images/carrousel/reserva.webp",
   },
   {
     id: "simaruba-beach-club",
     title: "Simaruba Beach Club",
     location: "Cartagena, Bolívar",
     subtitle: "Cartagena, Bolívar",
-    image: "/images/carrousel/simaruba.webp",
   },
   {
     id: "luwana-alma-beach",
     title: "Luwana Alma Beach",
     location: "Cartagena, Bolívar",
     subtitle: "Cartagena, Bolívar",
-    image: "/images/carrousel/luwana.webp",
   },
 ];
 
@@ -93,7 +88,7 @@ export default function Carousel() {
               transition:
                 "opacity 0.8s ease-in-out, transform 0.3s ease-in-out",
               pointerEvents: activeStep === index ? "auto" : "none",
-              backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, transparent 100%), url(${item.image})`,
+              backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, transparent 100%), url(/images/carrousel/${item.id}.webp)`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               cursor: "pointer",

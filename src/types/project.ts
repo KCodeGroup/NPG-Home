@@ -44,11 +44,16 @@ export interface Financiacion {
 export interface Ubicacion {
   ciudad: string;
   departamento: string;
+  googleMaps: string;
 }
+
+export type TipoProyecto = "residencial" | "playa" | "campestre";
 
 export interface Project {
   id: string;
   nombre: string;
+  tipo: TipoProyecto;
+  catchPhrase: string;
   ubicacion: Ubicacion;
   descripcion: string;
   amenidades: string[];
