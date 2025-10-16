@@ -57,7 +57,7 @@ ${formData.message}
           position: "relative",
           width: "100%",
           height: { xs: "300px", sm: "400px", md: "500px", lg: "600px" },
-          backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, transparent 100%), url(/images/proyectos/portada.webp)`,
+          backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, transparent 100%), url(/images/contacto.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -110,7 +110,7 @@ ${formData.message}
             }}
           >
             <Typography
-              variant="h6"
+              variant="h4"
               sx={{
                 fontWeight: 600,
                 color: "#1a1a1a",
@@ -157,7 +157,7 @@ ${formData.message}
           <Box
             sx={{
               width: "100%",
-              py: 6,
+              py: { xs: 2, md: 6 },
               px: { xs: 3, sm: 4, md: 6 },
               backgroundColor: "white",
             }}
@@ -266,11 +266,11 @@ ${formData.message}
                       sx={{
                         backgroundColor: colors.primary,
                         color: colors.light,
-                        borderRadius: 2,
+                        borderRadius: "45px",
                         px: 6,
                         py: 1.5,
                         fontWeight: 600,
-                        fontSize: "1.1rem",
+                        fontSize: { xs: "0.875rem", md: "1rem" },
                         "&:hover": {
                           backgroundColor: colors.secondary,
                         },

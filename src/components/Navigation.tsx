@@ -145,7 +145,15 @@ export default function Navigation() {
         >
           Síguenos en:
         </Typography>
-        <Box sx={{ display: "flex", gap: 1, mb: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 1,
+            mb: 3,
+          }}
+        >
           {socialLinks.map((social) => (
             <IconButton
               key={social.label}

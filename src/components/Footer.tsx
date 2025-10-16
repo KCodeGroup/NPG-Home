@@ -1,11 +1,39 @@
+import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Box, Link, Typography, Stack, IconButton } from "@mui/material";
 import Image from "next/image";
 import { colors } from "@/theme/theme";
+import { CONTACT_INFO } from "@/utils/contactInfo";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      icon: FacebookIcon,
+      href: CONTACT_INFO.facebookUrl,
+      label: "Facebook",
+      color: "#1877F2",
+    },
+    {
+      icon: InstagramIcon,
+      href: CONTACT_INFO.instagramUrl,
+      label: "Instagram",
+      color: "#E4405F",
+    },
+    {
+      icon: LinkedInIcon,
+      href: CONTACT_INFO.linkedinUrl,
+      label: "LinkedIn",
+      color: "#0A66C2",
+    },
+    {
+      icon: WhatsAppIcon,
+      href: `https://wa.me/${CONTACT_INFO.whatsappNumber}`,
+      label: "WhatsApp",
+      color: "#25D366",
+    },
+  ];
   return (
     <Stack>
       <Box
@@ -34,24 +62,16 @@ export default function Footer() {
         }}
       >
         <Typography>Contactanos</Typography>
-        <Typography>+57 317 823 4567</Typography>
-        <Typography>info@npghome.com</Typography>
+        <Typography>{CONTACT_INFO.phone}</Typography>
+        <Typography>{CONTACT_INFO.email}</Typography>
         <Stack direction="row" gap={2} alignItems="center">
-          <IconButton>
-            <Link href="/">
-              <WhatsAppIcon sx={{ color: colors.light }} />
-            </Link>
-          </IconButton>
-          <IconButton>
-            <Link href="/">
-              <InstagramIcon sx={{ color: colors.light }} />
-            </Link>
-          </IconButton>
-          <IconButton>
-            <Link href="/">
-              <LinkedInIcon sx={{ color: colors.light }} />
-            </Link>
-          </IconButton>
+          {socialLinks.map((social) => (
+            <IconButton key={social.label}>
+              <Link href={social.href}>
+                <social.icon sx={{ color: colors.light }} />
+              </Link>
+            </IconButton>
+          ))}
         </Stack>
       </Stack>
       <Typography

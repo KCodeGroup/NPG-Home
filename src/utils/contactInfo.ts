@@ -1,6 +1,6 @@
 export const CONTACT_INFO = {
   phone: "+57 302 3890854",
-  email: "contacto@paghome.com.co",
+  email: "contacto@npghome.com.co",
   facebookUrl: "",
   instagramUrl: "",
   linkedinUrl: "",

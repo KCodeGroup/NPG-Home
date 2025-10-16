@@ -85,6 +85,8 @@ export default function HouseTypeCarousel({
             alt={`House Type ${houseTypeIndex + 1} - Image ${index + 1}`}
             fill
             style={{ objectFit: "contain" }}
+            loading={index === 0 ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </Box>
       ))}

@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Providers from "@/components/Providers";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import RoutePreloader from "@/components/RoutePreloader";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -38,6 +39,7 @@ export default function RootLayout({
         }}
       >
         <Providers>
+          <RoutePreloader />
           <Navigation />
           <div style={{ flex: 1 }}>{children}</div>
           <Footer />
