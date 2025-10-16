@@ -22,6 +22,7 @@ import amenityIconMap from "@/utils/amenityIcons";
 import HouseTypeCarousel from "@/components/HouseTypeCarousel";
 import houseCharacteristicMap from "@/utils/houseCharacteristicIcons";
 import FinancingCard from "@/components/FinancingCard";
+import ProjectPartners from "@/components/ProjectPartners";
 
 interface ProjectPageProps {
   params: {
@@ -538,6 +539,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </Grid>
         </Grid>
       </Box>
+      <ProjectPartners sx={{ width: "100%" }} partners={project.socios} />
     </Stack>
   );
 }

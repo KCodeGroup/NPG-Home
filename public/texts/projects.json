@@ -81,7 +81,25 @@
             "financiacion": "80%",
             "separaTuLotePor": "1.000.000",
             "precioPorM2Desde": "347.000"
-        }
+        },
+        "socios": [
+            {
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            },{
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            },{
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            },{
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            },{
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            }
+        ]
     },
     {
         "id": "la-reserva-campestre",
@@ -174,7 +192,13 @@
             "financiacion": "60%",
             "separaTuLotePor": "1.000.000",
             "precioPorM2Desde": "530.000"
-        }
+        },
+        "socios": [
+            {
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            }
+        ]
     },
     {
         "id": "simaruba-beach-club",
@@ -266,7 +290,13 @@
             "financiacion": "75%",
             "separaTuLotePor": "5.000.000",
             "precioPorM2Desde": "00.000"
-        }
+        },
+        "socios": [
+            {
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            }
+        ]
     },
     {
         "id": "luwana-alma-beach",
@@ -340,6 +370,12 @@
             "financiacion": "60%",
             "separaTuLotePor": "5.000.000",
             "precioPorM2Desde": "1.170.000"
-        }
+        },
+        "socios": [
+            {
+                "nombre": "NPG Home",
+                "role": "Desarrollador"
+            }
+        ]
     }
 ]

@@ -62,4 +62,8 @@ export interface Project {
   financiacion: Financiacion;
   caracteristicasEspeciales?: string[];
   m2: string;
+  socios: {
+    nombre: string;
+    role: string;
+  }[];
 }

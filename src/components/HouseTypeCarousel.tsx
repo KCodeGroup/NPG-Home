@@ -63,7 +63,7 @@ export default function HouseTypeCarousel({
         height: { xs: "350px", sm: "450px", md: "550px" },
         borderRadius: 2,
         overflow: "hidden",
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "#ffffff",
       }}
     >
       {/* Images */}
@@ -84,7 +84,7 @@ export default function HouseTypeCarousel({
             src={`/images/proyectos/${projectId}/${houseTypeIndex}/${index}.webp`}
             alt={`House Type ${houseTypeIndex + 1} - Image ${index + 1}`}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
         </Box>
       ))}
