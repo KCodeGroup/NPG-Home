@@ -26,6 +26,7 @@ import LogoButton from "./LogoButton";
 import ContactButton from "./ContactButton";
 import theme from "@/theme/theme";
 import Link from "next/link";
+import { CONTACT_INFO } from "@/utils/contactInfo";
 
 const { palette } = theme;
 
@@ -39,25 +40,25 @@ const navLinks = [
 const socialLinks = [
   {
     icon: FacebookIcon,
-    href: "https://facebook.com",
+    href: CONTACT_INFO.facebookUrl,
     label: "Facebook",
     color: "#1877F2",
   },
   {
     icon: InstagramIcon,
-    href: "https://instagram.com",
+    href: CONTACT_INFO.instagramUrl,
     label: "Instagram",
     color: "#E4405F",
   },
   {
     icon: LinkedInIcon,
-    href: "https://linkedin.com",
+    href: CONTACT_INFO.linkedinUrl,
     label: "LinkedIn",
     color: "#0A66C2",
   },
   {
     icon: WhatsAppIcon,
-    href: "https://wa.me/",
+    href: `https://wa.me/${CONTACT_INFO.whatsappNumber}`,
     label: "WhatsApp",
     color: "#25D366",
   },
