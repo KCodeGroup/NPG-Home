@@ -33,7 +33,7 @@ const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/proyectos", label: "Proyectos" },
   { href: "/contacto", label: "Contacto" },
-  { href: "/sobre-nosotros", label: "Sobre Nosotros" },
+  // { href: "/sobre-nosotros", label: "Sobre Nosotros" },
 ];
 
 const socialLinks = [
