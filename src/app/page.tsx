@@ -1,4 +1,4 @@
-import { Typography, Stack } from "@mui/material";
+import { Typography, Stack, Box } from "@mui/material";
 import Carousel from "@/components/Carousel";
 import ProjectCardGrid from "@/components/ProjectCardGrid";
 import HomeGrid from "@/components/HomeGrid";
@@ -40,7 +40,7 @@ export default function Home() {
           Convertimos tus sueños en proyectos reales, donde cada detalle refleja
           confianza y visión."
       />
-      {/* <HomeGrid /> */}
+      <HomeGrid />
       <CTATextSection
         title="Estás a pocos pasos de alcanzar tus sueños"
         description="Escríbenos y déjanos crear el espacio perfecto para ti, donde la
