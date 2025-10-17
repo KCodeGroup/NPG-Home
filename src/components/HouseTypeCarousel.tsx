@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, Typography, Tooltip } from "@mui/material";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Image from "next/image";
 import { colors } from "@/theme/theme";
@@ -18,11 +18,14 @@ export default function HouseTypeCarousel({
   totalImages,
 }: HouseTypeCarouselProps) {
   const [activeStep, setActiveStep] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(true);
 
   // Reset to first image when house type changes
   useEffect(() => {
     setActiveStep(0);
   }, [houseTypeIndex]);
+
+  // Hide tooltip after 5 seconds
 
   // Return null if no images
   if (!totalImages || totalImages === 0) {
@@ -46,10 +49,12 @@ export default function HouseTypeCarousel({
   }
 
   const handleNext = () => {
+    if (showTooltip) setShowTooltip(false);
     setActiveStep((prevActiveStep) => (prevActiveStep + 1) % totalImages);
   };
 
   const handleBack = () => {
+    if (showTooltip) setShowTooltip(false);
     setActiveStep((prevActiveStep) =>
       prevActiveStep === 0 ? totalImages - 1 : prevActiveStep - 1
     );
@@ -91,47 +96,76 @@ export default function HouseTypeCarousel({
         </Box>
       ))}
 
-      {/* Navigation buttons */}
+      {/* Navigation buttons - invisible but clickable on mobile */}
       <IconButton
         onClick={handleBack}
         sx={{
           position: "absolute",
-          left: { xs: 10, sm: 20 },
-          top: "50%",
-          transform: "translateY(-50%)",
-          backgroundColor: colors.light,
-          color: colors.primary,
+          left: 0,
+          top: 0,
+          width: { xs: "50%", md: "auto" },
+          height: "100%",
+          transform: "none",
+          backgroundColor: { xs: "transparent", md: colors.light },
+          color: { xs: "transparent", md: colors.primary },
           "&:hover": {
-            backgroundColor: colors.secondary,
-            color: colors.light,
-            boxShadow: "0 6px 20px rgba(0, 0, 0, 0.25)",
+            backgroundColor: { xs: "transparent", md: colors.secondary },
+            color: { xs: "transparent", md: colors.light },
+            boxShadow: { xs: "none", md: "0 6px 20px rgba(0, 0, 0, 0.25)" },
           },
           transition: "all 0.3s ease",
           zIndex: 10,
+          borderRadius: 0,
         }}
       >
-        <KeyboardArrowLeft />
+        <KeyboardArrowLeft sx={{ display: { xs: "none", md: "block" } }} />
       </IconButton>
       <IconButton
         onClick={handleNext}
         sx={{
           position: "absolute",
-          right: { xs: 10, sm: 20 },
-          top: "50%",
-          transform: "translateY(-50%)",
-          backgroundColor: colors.light,
-          color: colors.primary,
+          right: 0,
+          top: 0,
+          width: { xs: "50%", md: "auto" },
+          height: "100%",
+          transform: "none",
+          backgroundColor: { xs: "transparent", md: colors.light },
+          color: { xs: "transparent", md: colors.primary },
           "&:hover": {
-            backgroundColor: colors.secondary,
-            color: colors.light,
-            boxShadow: "0 6px 20px rgba(0, 0, 0, 0.25)",
+            backgroundColor: { xs: "transparent", md: colors.secondary },
+            color: { xs: "transparent", md: colors.light },
+            boxShadow: { xs: "none", md: "0 6px 20px rgba(0, 0, 0, 0.25)" },
           },
           transition: "all 0.3s ease",
           zIndex: 10,
+          borderRadius: 0,
         }}
       >
-        <KeyboardArrowRight />
+        <KeyboardArrowRight sx={{ display: { xs: "none", md: "block" } }} />
       </IconButton>
+
+      {/* Temporary tooltip for mobile users */}
+      {showTooltip && (
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: "50%",
+            transform: "translateX(-50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            color: "white",
+            px: 2,
+            py: 1,
+            borderRadius: 1,
+            zIndex: 20,
+            display: { xs: "block", md: "none" },
+          }}
+        >
+          <Typography variant="body2" sx={{ fontSize: "0.75rem" }}>
+            Toca los lados para navegar
+          </Typography>
+        </Box>
+      )}
 
       {/* Image counter */}
       <Box

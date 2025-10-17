@@ -122,7 +122,7 @@ export default function FinancingCard({
           {/* Left Column - Cuota Inicial */}
           <Box
             sx={{
-              textAlign: { xs: "center", md: "left" },
+              textAlign: "center",
               flex: { xs: "1", md: "1" },
               minWidth: { xs: "100%", md: "200px" },
             }}
@@ -173,7 +173,7 @@ export default function FinancingCard({
           {/* Right Column - Financiación */}
           <Box
             sx={{
-              textAlign: { xs: "center", md: "right" },
+              textAlign: "center",
               flex: { xs: "1", md: "1" },
               minWidth: { xs: "100%", md: "200px" },
             }}

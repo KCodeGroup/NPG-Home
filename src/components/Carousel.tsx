@@ -132,7 +132,7 @@ export default function Carousel() {
               >
                 {item.location}
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="h6"
                 component="p"
                 sx={{
@@ -141,7 +141,7 @@ export default function Carousel() {
                 }}
               >
                 {item.subtitle}
-              </Typography>
+              </Typography> */}
             </Box>
           </Box>
         </Link>

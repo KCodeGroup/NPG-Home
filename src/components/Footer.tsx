@@ -2,6 +2,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TikTokIcon from "@/utils/TiktokIcon";
 import { Box, Link, Typography, Stack, IconButton } from "@mui/material";
 import Image from "next/image";
 import { colors } from "@/theme/theme";
@@ -32,6 +33,12 @@ export default function Footer() {
       href: `https://wa.me/${CONTACT_INFO.whatsappNumber}`,
       label: "WhatsApp",
       color: "#25D366",
+    },
+    {
+      icon: TikTokIcon,
+      href: CONTACT_INFO.tiktokUrl,
+      label: "TikTok",
+      color: "#000000",
     },
   ];
   return (

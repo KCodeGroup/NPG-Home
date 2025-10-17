@@ -1,8 +1,9 @@
 import { Typography, Stack, Box } from "@mui/material";
 import Carousel from "@/components/Carousel";
 import ProjectCardGrid from "@/components/ProjectCardGrid";
-import HomeGrid from "@/components/HomeGrid";
+// import HomeGrid from "@/components/HomeGrid";
 import CTATextSection from "@/components/CTATextSection";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -33,19 +34,22 @@ export default function Home() {
         </Typography>
       </Stack>
       <ProjectCardGrid />
-      <CTATextSection
+      {/* <CTATextSection
         title="Creamos espacios que reflejan sueños, visión y confianza"
         description="Combinamos diseño, experiencia y asesoría personalizada para ofrecer
           soluciones inmobiliarias que conectan con tus aspiraciones.
           Convertimos tus sueños en proyectos reales, donde cada detalle refleja
           confianza y visión."
-      />
-      <HomeGrid />
+      /> */}
+      {/* <HomeGrid /> */}
       <CTATextSection
         title="Estás a pocos pasos de alcanzar tus sueños"
         description="Escríbenos y déjanos crear el espacio perfecto para ti, donde la
           confianza y la visión se vuelven realidad."
       />
+      <Box mb={10}>
+        <ContactForm />
+      </Box>
     </Stack>
   );
 }
