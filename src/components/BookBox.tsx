@@ -17,32 +17,39 @@ export default function BookBox() {
         alignItems: "center",
         justifyContent: "space-between",
         pb: 2,
-        pt: 8,
+        pt: { xs: 5, sm: 7 },
       }}
     >
       <Box
         sx={{
           position: "absolute",
-          top: -25,
+          top: { xs: -20, sm: -25 },
           left: "50%",
           transform: "translateX(-50%)",
           color: colors.light,
           backgroundColor: colors.primary,
           borderRadius: "37px",
-          px: 5,
+          minWidth: 130,
+          px: { xs: 0.5, sm: 5 },
           py: 1,
         }}
       >
         <Typography
           variant="h6"
           fontWeight={700}
-          fontSize={{ xs: "1rem", md: "1.25rem" }}
+          fontSize={{ xs: "0.75rem", sm: "1rem", md: "1.25rem" }}
           textAlign="center"
         >
           Solicitar asesoría
         </Typography>
       </Box>
-      <Typography variant="body1" fontWeight={400} textAlign="center">
+      <Typography
+        variant="body1"
+        fontWeight={400}
+        textAlign="center"
+        fontSize={{ xs: "0.875rem", sm: "1rem", md: "1.25rem" }}
+        mb={2}
+      >
         Agenda facilmente un cita y déjanos mostrarte por qué nuestros proyectos
         son la elección perfecta para tu próximo capítulo.
       </Typography>

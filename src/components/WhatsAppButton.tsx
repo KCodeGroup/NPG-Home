@@ -3,16 +3,38 @@
 import { Fab, Tooltip } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
 import { colors } from "@/theme/theme";
+import { CONTACT_INFO } from "@/utils/contactInfo";
+import { useProject } from "./ProjectContext";
 
 export default function WhatsAppButton() {
+  const { currentProject } = useProject();
   const handleWhatsAppClick = () => {
-    // TODO: Add WhatsApp redirect functionality
-    console.log("WhatsApp button clicked");
+    let message: string;
+
+    if (currentProject) {
+      // Custom message for specific project
+      message = `Hola! Estoy interesado en el proyecto *${currentProject.nombre}* en ${currentProject.ubicacion.ciudad}, ${currentProject.ubicacion.departamento}. Me gustaría conocer más detalles sobre este desarrollo.`;
+    } else {
+      // Default message for general inquiries
+      message =
+        "Hola! Me interesa conocer más sobre sus proyectos inmobiliarios.";
+    }
+
+    const whatsappUrl = `https://wa.me/${
+      CONTACT_INFO.whatsappNumber
+    }?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
     <Tooltip
-      title="Comunicate directamente con nuestros asesores via Whatsapp"
+      title={
+        currentProject
+          ? `Consulta sobre ${currentProject.nombre} via WhatsApp`
+          : "Comunicate directamente con nuestros asesores via Whatsapp"
+      }
       placement="left"
       arrow
     >

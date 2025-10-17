@@ -36,8 +36,10 @@ export default function ProjectCardGrid() {
       <Tabs
         value={filter}
         onChange={handleFilterChange}
+        variant="scrollable"
         sx={{
           mb: 4,
+          width: { xs: "100%", md: "auto" },
           "& .MuiTabs-indicator": {
             backgroundColor: "#BD8353",
             height: "2px",
@@ -47,10 +49,12 @@ export default function ProjectCardGrid() {
             fontSize: { xs: "0.875rem", md: "1rem" },
             fontWeight: 400,
             textTransform: "none",
-            px: { xs: 1.5, md: 2 },
+            px: { xs: 1, md: 2 },
             py: 1,
             borderRadius: "4px",
             transition: "all 0.3s ease",
+            minWidth: { xs: "auto", md: "auto" },
+            flex: { xs: 1, md: "none" },
             "&:hover": {
               color: "#BD8353",
               backgroundColor: "rgba(189, 131, 83, 0.1)",
@@ -73,6 +77,8 @@ export default function ProjectCardGrid() {
         width={{ xs: "90%", md: "65%" }}
         rowSpacing={4}
         columnSpacing={0}
+        justifyContent="center"
+        alignItems="center"
       >
         {filteredProjects.map((project) => (
           <Grid

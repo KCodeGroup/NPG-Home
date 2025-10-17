@@ -1,10 +1,11 @@
 export const CONTACT_INFO = {
-  phone: "+57 302 3890854",
-  email: "contacto@npghome.com.co",
-  facebookUrl: "",
-  instagramUrl: "",
-  linkedinUrl: "",
-  whatsappNumber: "573023890854", // For WhatsApp links (no spaces, dashes, or country code formatting)
+  phone: "+57 321 7974425",
+  email: "gerencianpghome@gmail.com",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61581357161932",
+  instagramUrl: "https://www.instagram.com/npghome/",
+  linkedinUrl: "https://www.linkedin.com/in/npg-home-51293a387/",
+  tiktokUrl: "https://www.tiktok.com/@npghome",
+  whatsappNumber: "573217974425", // For WhatsApp links (no spaces, dashes, or country code formatting)
   address:
     "Cl. 29 #24 63, Manga, Cartagena de Indias, Provincia de Cartagena, Bolívar", // Add your specific address here
   googleMapsEmbedUrl:

@@ -1,7 +1,7 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Stack,
   Box,
@@ -23,6 +23,7 @@ import HouseTypeCarousel from "@/components/HouseTypeCarousel";
 import houseCharacteristicMap from "@/utils/houseCharacteristicIcons";
 import FinancingCard from "@/components/FinancingCard";
 import ProjectPartners from "@/components/ProjectPartners";
+import { useProject } from "@/components/ProjectContext";
 
 interface ProjectPageProps {
   params: {
@@ -36,6 +37,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const { setCurrentProject } = useProject();
 
   const project = projects.find((p) => p.id === params.id) as
     | Project
@@ -44,6 +46,16 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   if (!project) {
     notFound();
   }
+
+  // Set the current project in context when component mounts
+  useEffect(() => {
+    setCurrentProject(project);
+
+    // Clean up when component unmounts
+    return () => {
+      setCurrentProject(null);
+    };
+  }, [project, setCurrentProject]);
 
   // Determine how many amenities to show based on screen size
   const getAmenityLimit = () => {
@@ -154,17 +166,22 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               sx={{
                 position: "relative",
                 width: "100%",
-                height: { xs: "350px", sm: "450px", md: "550px" },
+                height: { xs: "250px", sm: "450px", md: "550px" },
                 borderRadius: 2,
                 overflow: "hidden",
-                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
               <Image
                 src={`/images/location/${project.id}.webp`}
                 alt="Location Image"
                 fill
-                style={{ objectFit: "fill" }}
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "center",
+                  borderRadius: 2,
+                }}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </Box>
           </Grid>
