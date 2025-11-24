@@ -5,28 +5,30 @@ import { WhatsApp } from "@mui/icons-material";
 import { colors } from "@/theme/theme";
 import { CONTACT_INFO } from "@/utils/contactInfo";
 import { useProject } from "./ProjectContext";
+import { Project } from "@/types/project";
 
+export const handleWhatsAppClick = (
+  projectName: Project | null,
+  message?: string
+) => {
+  if (projectName && !message) {
+    // Custom message for specific project
+    message = `Hola! Estoy interesado en el proyecto *${projectName.nombre}* en ${projectName.ubicacion.ciudad}, ${projectName.ubicacion.departamento}. Me gustaría conocer más detalles sobre este desarrollo.`;
+  } else {
+    // Default message for general inquiries
+    message =
+      "Hola! Me interesa conocer más sobre sus proyectos inmobiliarios.";
+  }
+
+  const whatsappUrl = `https://wa.me/${
+    CONTACT_INFO.whatsappNumber
+  }?text=${encodeURIComponent(message)}`;
+
+  // Open WhatsApp in a new tab
+  window.open(whatsappUrl, "_blank");
+};
 export default function WhatsAppButton() {
   const { currentProject } = useProject();
-  const handleWhatsAppClick = () => {
-    let message: string;
-
-    if (currentProject) {
-      // Custom message for specific project
-      message = `Hola! Estoy interesado en el proyecto *${currentProject.nombre}* en ${currentProject.ubicacion.ciudad}, ${currentProject.ubicacion.departamento}. Me gustaría conocer más detalles sobre este desarrollo.`;
-    } else {
-      // Default message for general inquiries
-      message =
-        "Hola! Me interesa conocer más sobre sus proyectos inmobiliarios.";
-    }
-
-    const whatsappUrl = `https://wa.me/${
-      CONTACT_INFO.whatsappNumber
-    }?text=${encodeURIComponent(message)}`;
-
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, "_blank");
-  };
 
   return (
     <Tooltip
@@ -57,7 +59,7 @@ export default function WhatsAppButton() {
           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
           transition: "all 0.3s ease",
         }}
-        onClick={handleWhatsAppClick}
+        onClick={() => handleWhatsAppClick(currentProject)}
       >
         <WhatsApp />
       </Fab>

@@ -1,6 +1,6 @@
 export const CONTACT_INFO = {
   phone: "+57 321 7974425",
-  email: "gerencianpghome@gmail.com",
+  email: "gerencia@npghome.com",
   facebookUrl: "https://www.facebook.com/profile.php?id=61581357161932",
   instagramUrl: "https://www.instagram.com/npghome/",
   linkedinUrl: "https://www.linkedin.com/in/npg-home-51293a387/",
