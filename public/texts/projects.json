@@ -84,20 +84,23 @@
         },
         "socios": [
             {
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "icg.svg",
+                "role": "Constructora"
             },{
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "eco_norte.svg",
+                "role": "Promotora"
             },{
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "gary.svg",
+                "role": "Diseño + Estructura"
             },{
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "maadga.svg",
+                "role": "Diseño + Estructura"
             },{
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "chic_haus.png",
+                "role": "Genrecia comercial"
+            },{
+                "nombre": "patrimofy.svg",
+                "role": "Aliados comerciales"
             }
         ]
     },
@@ -184,7 +187,7 @@
                 }
             }
         ],
-        "m2": "0m²",
+        "m2": "180m²",
         "financiacion": {
             "lotesDesde": "106.000.000",
             "cuotaInicial": "20%",
@@ -195,8 +198,26 @@
         },
         "socios": [
             {
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "chic_haus.png",
+                "role": "Genrecia comercial"
+            }, {
+                "nombre": "superior.svg",
+                "role": "Grupo minero | Respaldo"
+            }, {
+                "nombre": "gary.svg",
+                "role": "Diseño + Estructura"
+            }, {
+                "nombre": "maadga.svg",
+                "role": "Diseño + Estructura"
+            }, {
+                "nombre": "est_urb.svg",
+                "role": "Promotora"
+            }, {
+                "nombre": "c47.svg",
+                "role": "Arquitectura"
+            }, {
+                "nombre": "fincaraiz.svg",
+                "role": "Aliados comerciales"
             }
         ]
     },
@@ -283,13 +304,13 @@
                 }
             }
         ],
-        "m2": "239m²",
+        "m2": "300m²",
         "financiacion": {
-            "lotesDesde": "00.000.000",
+            "lotesDesde": "335.000.000",
             "cuotaInicial": "25%",
             "financiacion": "75%",
             "separaTuLotePor": "5.000.000",
-            "precioPorM2Desde": "00.000"
+            "precioPorM2Desde": "1.250.000"
         },
         "socios": [
             {
@@ -373,8 +394,23 @@
         },
         "socios": [
             {
-                "nombre": "NPG Home",
-                "role": "Desarrollador"
+                "nombre": "icg.svg",
+                "role": "Constructora"
+            }, {
+                "nombre": "rubik.png",
+                "role": "Promotora"
+            }, {
+                "nombre": "gary.svg",
+                "role": "Diseño + Estructura"
+            }, {
+                "nombre": "maadga.svg",
+                "role": "Diseño + Estructura"
+            }, {
+                "nombre": "chic_haus.png",
+                "role": "Genrecia comercial"
+            }, {
+                "nombre": "patrimofy.svg",
+                "role": "Aliados comerciales"
             }
         ]
     }

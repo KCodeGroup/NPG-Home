@@ -5,6 +5,7 @@ import { Phone } from "@mui/icons-material";
 import Image from "next/image";
 import { colors } from "@/theme/theme";
 import { Project } from "@/types/project";
+import { handleWhatsAppClick } from "./WhatsAppButton";
 
 interface FinancingCardProps {
   financing: Project["financiacion"];
@@ -270,6 +271,9 @@ export default function FinancingCard({
               "&:hover": {
                 backgroundColor: colors.dark,
               },
+            }}
+            onClick={() => {
+              handleWhatsAppClick(project);
             }}
           >
             Financia aquí

@@ -39,11 +39,11 @@ export default function PartnerCard({ partner }: PartnerCardProps) {
         }}
       >
         <Image
-          src={`/images/partners/${partner.nombre}.svg`}
+          src={`/images/partners/${partner.nombre}`}
           alt={`${partner.nombre} - ${partner.role}`}
           fill
           style={{
-            objectFit: "cover",
+            objectFit: "fill",
             objectPosition: "center",
           }}
         />
@@ -72,15 +72,6 @@ export default function PartnerCard({ partner }: PartnerCardProps) {
           textAlign: "center",
         }}
       >
-        <Typography
-          variant="body2"
-          fontWeight={600}
-          color={colors.light}
-          mb={0.25}
-          sx={{ fontSize: { xs: "0.75rem", sm: "0.875rem" } }}
-        >
-          {partner.nombre}
-        </Typography>
         <Typography
           variant="caption"
           color={colors.light}
